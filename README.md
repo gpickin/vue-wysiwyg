@@ -4,21 +4,21 @@
 ## Usage
 
 
-### Install vue-wysiwyg
+### Install vue-wysiwyg-gp
 
 ``` bash
-npm install vue-wysiwyg --save
+npm install vue-wysiwyg-gp --save
 ```
 OR
 
 ``` bash
-yarn add vue-wysiwyg
+yarn add vue-wysiwyg-gp
 ```
 
 In your `main.js`:
 
 ```js
-import wysiwyg from "vue-wysiwyg";
+import wysiwyg from "vue-wysiwyg-gp";
 Vue.use(wysiwyg, {}); // config is optional. more below
 ```
 
@@ -26,7 +26,7 @@ Also make sure to load the stylesheet.
 The exact syntax will depend on what preprocessor you use.
 
 ```css
-@import "~vue-wysiwyg/dist/vueWysiwyg.css";
+@import "~vue-wysiwyg-gp/dist/vueWysiwyg.css";
 ```
 
 In your components:
