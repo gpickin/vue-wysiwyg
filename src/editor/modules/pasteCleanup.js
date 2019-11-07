@@ -1,6 +1,6 @@
 export default function(obj) {
     obj = obj.replace(
-        /<(\/)*(\\?xml:|body|html|meta|link|span|font|del|ins|st1:|[ovwxp]:)((.|\s)*?)>/gi,
+        /<(\/)*(\\?xml:|body|html|meta|link|h1|h2|h3|h4|h5|h6|span|font|del|ins|st1:|[ovwxp]:)((.|\s)*?)>/gi,
         ""
     ); // Unwanted tags
     obj = obj.replace(
