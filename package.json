@@ -1,7 +1,7 @@
 {
-  "name": "vue-wysiwyg",
-  "version": "1.7.1",
-  "description": "A WYSIWYG HTML editor for Vue.js",
+  "name": "vue-wysiwyg-gp",
+  "version": "2.0.0",
+  "description": "A WYSIWYG HTML editor for Vue.js - Originally built and maintained by Gregory <gregory.mkv@gmail.com>",
   "keywords": [
     "vue",
     "vue2",
@@ -9,7 +9,7 @@
     "html",
     "editor"
   ],
-  "author": "Gregory <gregory.mkv@gmail.com>",
+  "author": "Gavin Pickin <gpickin@gmail.com>",
   "license": "MIT",
   "main": "dist/vueWysiwyg.js",
   "style": "dist/vueWysiwyg.css",
@@ -17,12 +17,13 @@
     "dev": "node build/dev-server.js",
     "build": "npm run build:prod",
     "build:demo": "BABEL_ENV=production BUILD=demo DIR=demo node build/build.js",
-    "build:prod": "rm -rf dist/* && BABEL_ENV=production BUILD=prod node build/build.js"
+    "build:prod": "rm -rf dist/* && BABEL_ENV=production BUILD=prod node build/build.js",
+    "build:prodWindows": "$Env:BABEL_ENV=\"production\";$Env:BUILD=\"prod\";node build/build.js"
   },
   "dependencies": {
     "debounce": "^1.1.0",
     "vue": "^2.5.13",
-    "vue2-dropzone": "^3.0.4"
+    "vue2-dropzone": "^3.0.6"
   },
   "devDependencies": {
     "autoprefixer": "^8.0.0",

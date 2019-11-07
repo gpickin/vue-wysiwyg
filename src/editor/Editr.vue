@@ -196,6 +196,7 @@ export default {
 
              // get a plain representation of the clipboard
             var text = e.clipboardData.getData("text/plain");
+            //var text = e.clipboardData.getData("text/html");
 
             // insert that plain text text manually
             document.execCommand("insertHTML", false, text);
@@ -219,7 +220,7 @@ export default {
         if (this.mergedOptions.forcePlainTextOnPaste === true) {
             this.$refs.content.addEventListener("paste", this.onPaste);
         }
-        
+
         this.$refs.content.style.maxHeight = this.mergedOptions.maxHeight;
     },
 
