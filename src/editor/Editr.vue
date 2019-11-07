@@ -42,6 +42,8 @@ import removeFormat from "./modules/removeFormat.js";
 
 import separator from "./modules/separator.js";
 
+import pasteCleanup from "./modules/pasteCleanup.js";
+
 const modules = [
     bold, italic, underline, separator,
     alignLeft, alignCenter, alignRight, separator,
@@ -195,8 +197,11 @@ export default {
             e.preventDefault();
 
              // get a plain representation of the clipboard
-            var text = e.clipboardData.getData("text/plain");
-            //var text = e.clipboardData.getData("text/html");
+            //var text = e.clipboardData.getData("text/plain");
+            var text = e.clipboardData.getData("text/html");
+            //console.log( text );
+            text = pasteCleanup( text );
+            //console.log( text );
 
             // insert that plain text text manually
             document.execCommand("insertHTML", false, text);
